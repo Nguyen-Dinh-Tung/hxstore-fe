@@ -27,10 +27,7 @@ export default function RootLayout({
           name="description"
           content="Stay updated with the latest AI trends for website design, operations, and news through our informative blog. Our team of experts share insights, tips, and strategies to help you stay ahead of the game. From NFT's to Digital Marketing, we cover it all. Subscribe now to never miss a post."
         />
-        <meta
-          name="keywords"
-          content="AI Web Design Insights, Tips, and News | Web Cartel"
-        />
+        <meta name="keywords" content="LESAC - MINIMAL BAGS BRAND" />
         <link href="./css/vendors/aos.css" rel="stylesheet" />
         <link href="./style.css" rel="stylesheet" />
         <link
@@ -39,13 +36,13 @@ export default function RootLayout({
           type="image/x-icon"
         />
         <link rel="icon" href="/images/Favicon.png" type="image/x-icon" />
-        <meta property="og:site_name" content="WebCartel" />
+        <meta property="og:site_name" content="HxStore" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://webcartel.ai/blog" />
-        <meta property="og:title" content="Cartel's Latest | Web Cartel" />
+        <meta property="og:url" content="https://hxstore.vercel.app/" />
+        <meta property="og:title" content="LESAC - MINIMAL BAGS BRAND" />
         <meta
           property="og:image"
-          content="https://www.webcartel.ai/images/WebCartel_SocialShare.png"
+          content="https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/169249/Originals/website-la-gi-01.jpeg"
         />
         <meta
           property="og:description"
@@ -55,7 +52,9 @@ export default function RootLayout({
 
       <body className={monsFonts.className}>
         <div className="flex justify-between items-center">
-          <p className="text-center text-xs pl-5">Enjoy every moment with LESAC</p>
+          <p className="text-center text-xs pl-5">
+            Enjoy every moment with LESAC
+          </p>
           <div className="p-2 bg-black text-white font-bold">
             <a href="tel:0378362631">+84-378362631</a>
           </div>
