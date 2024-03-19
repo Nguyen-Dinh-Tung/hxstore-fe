@@ -3,7 +3,7 @@ build:
 	npm i && npm run build
 start: 
 	$(MAKE) build
-	pm2 start --name=hx-fe-user npm -- start
+    PORT=3003 pm2 start --name=hx-fe-user npm -- start -- -p 3003
 
 restart:
 	$(MAKE) build
