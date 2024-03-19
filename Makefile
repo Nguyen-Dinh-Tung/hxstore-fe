@@ -1,6 +1,6 @@
 .PHONY: build
 build:
-	npm i && npm run build user
+	npm i && npm run build
 start: 
 	$(MAKE) build
 	pm2 start --name=hx-fe-user npm -- start
