@@ -18,12 +18,12 @@ function Footer() {
         <div className="grid md:grid-cols-3 gap-10 items-end text-sm mb-3">
           <p>
             <strong>Liên hệ:</strong> (+84) 855 225 895 <br />
-            <strong>Email:</strong> tuixachlesac@gmail.com <br />
+            <strong>Email:</strong> sinhlyshop90@gmail.com <br />
             <strong>Hà Nội</strong>: 07 Đặng Văn Ngữ, phường Trung Tự, quận Đống
             Đa, Hà Nội - 115A Cầu Giấy, phường Quan Hoa, quận Cầu Giấy, Hà Nội
           </p>
           <p>
-            LESAC x AMM <br /> Tầng 2 Aeon Mall Long Biên
+            Sinh ly x Shop 90 <br /> Tầng 2 Aeon Mall Long Biên
           </p>
 
           <p>

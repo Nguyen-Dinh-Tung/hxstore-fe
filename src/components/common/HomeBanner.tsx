@@ -21,7 +21,7 @@ const HomeBanner = () => {
       <div className="container mx-auto px-4 sm:px-6 absolute left-0 right-0 top-[25vh]">
         <div className="w-full lg:w-1/3 mb-10">
           <h1 className="text-2xl lg:text-4xl font-semibold mb-3 uppercase">
-            Lesac X Linhka
+            Sinh ly shop - 90
           </h1>
           <p className="text-xs lg:text-base">
             LESAC mang đến concept &quot;The Feels&quot; - được lấy cảm hứng

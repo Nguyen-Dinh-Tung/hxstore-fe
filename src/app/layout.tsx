@@ -21,13 +21,13 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <title>LESAC - MINIMAL BAGS BRAND</title>
+        <title>Shop sinh ly - 90</title>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta
           name="description"
           content="Stay updated with the latest AI trends for website design, operations, and news through our informative blog. Our team of experts share insights, tips, and strategies to help you stay ahead of the game. From NFT's to Digital Marketing, we cover it all. Subscribe now to never miss a post."
         />
-        <meta name="keywords" content="LESAC - MINIMAL BAGS BRAND" />
+        <meta name="keywords" content="Shop sinh ly - 90" />
         <link href="./css/vendors/aos.css" rel="stylesheet" />
         <link href="./style.css" rel="stylesheet" />
         <link

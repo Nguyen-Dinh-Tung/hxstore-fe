@@ -7,6 +7,7 @@ import axios, {
   CancelToken,
 } from "axios";
 import * as httpCode from "@/constants/http-code";
+export const baseApi: string = process.env.NEXT_PUBLIC_API_URL || "";
 
 class Axios {
   private instance: AxiosInstance;
@@ -15,7 +16,6 @@ class Axios {
   private isRefreshedToken: Boolean = false;
 
   constructor() {
-    const baseApi: string = process.env.NEXT_PUBLIC_API_URL || '';
     this.instance = axios.create({
       baseURL: baseApi,
       timeout: 30000,
@@ -27,7 +27,7 @@ class Axios {
       this.handleError
     );
 
-    this.instance.interceptors.request.use((config : any) => {
+    this.instance.interceptors.request.use((config: any) => {
       const source: CancelTokenSource = this.cancelToken.source();
       config.cancelToken = source.token;
       this.cancelTokens.push(source);
@@ -87,7 +87,7 @@ class Axios {
   private handleSuccess(response: AxiosResponse) {
     const cancelToken: CancelToken | undefined = response.config.cancelToken;
     axiosInstance.removeCancelToken(cancelToken);
-    const data = response.data.data;
+    const data = response.data.docs;
     return data;
   }
 
@@ -95,7 +95,7 @@ class Axios {
     if (count >= 10) return;
     if (!axiosInstance.isRefreshedToken) return;
 
-    await new Promise(resolve => setTimeout(resolve, 500));
+    await new Promise((resolve) => setTimeout(resolve, 500));
     await axiosInstance.awaitRefreshToken(count + 1);
   }
 
