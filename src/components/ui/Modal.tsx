@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Button from "./Button";
 import { DeliveryProductEnum } from "@/constants/enum";
-import axiosInstance from "@/config/axios";
+import axiosInstance, { baseApi } from "@/config/axios";
 import { API_URL_USER } from "@/services/http-url_user";
 export type OrderInfo = {
   productId: string;
@@ -67,15 +67,20 @@ export default function Modal(props: any) {
       <div className="flex justify-center mt-10">
         <Button label="Mua hàng" onClick={clickBuy} />
         {open && (
-          <div className="bg-black-500/40 fixed top-0 left-0 right-0 bottom-0 inset-0 z-30 flex justify-center ">
-            <div className="me-xl-0 detail  pl-[25px]  pr-[25px]  pt-[75px] pb-[75px] bg-white">
+          <div className="bg-gray-800	fixed top-0 left-0 right-0 bottom-0 inset-0 z-30 flex justify-center">
+            <div className="me-xl-0 detail  pl-[25px]  pr-[25px]  pt-[75px] pb-[75px] bg-white z-31">
+              <p className="text-xl text-[40px]	font-semibold uppercase">
+                Bạn đang đặt hàng tại Shopsinhly90
+              </p>
+              <p className="text-xl text-[24px]	font-semibold uppercase">
+                Hot line : 0337118801
+              </p>
               <div className="grid grid-cols-2 min-w-[998px] min-h-[892px]">
                 <div className="col-span-1 bg-blue max-h-full	 flex justify-center items-center	">
                   <img
-                    src="/images/demo-product.jpg"
-                    className="any"
+                    src={`${baseApi + "/" + product.urlIMG}`}
+                    className="max-w-[499px]"
                     alt="any"
-                    width={"100%"}
                   />
                 </div>
                 <form
@@ -86,11 +91,14 @@ export default function Modal(props: any) {
                     await buyNow();
                   }}>
                   <div className="col-span-1 	bg-red ">
-                    <p className="text-xl	font-semibold uppercase text-left	mb-[40px]">
-                      Tên sản phẩm : Thuốc an thần
+                    <p className="text-xl text-[30px]	font-semibold uppercase text-left mb-[20px]">
+                      Phiếu mua hàng :
                     </p>
-                    <p className="text-xl	font-semibold uppercase text-left	mb-[40px]">
-                      Thông tin mua hàng .
+                    <p className="text-xl text-left">
+                      Tên sản phẩm : {product.name}
+                    </p>
+                    <p className="text-xl text-left">
+                      Nơi sản xuất : {product.placeOfProduction}
                     </p>
                     <div className="flex justify-items-start mt-[10px] mb-[10px] ">
                       <input
@@ -176,11 +184,16 @@ export default function Modal(props: any) {
                       </select>
                     </div>
                   </div>
-                  <div className="flex justify-center">
+                  <div className="flex justify-around">
                     <button
                       type="submit"
                       className="min-w-[200px] justify-center min-h-[50x] py-2 px-4 flex gap-3 items-center border border-black hover:text-white hover:bg-primary hover:border-primary">
                       <span className="uppercase">Đặt hàng</span>
+                    </button>
+                    <button
+                      onClick={clickBuy}
+                      className="min-w-[200px] text-white	 justify-center min-h-[50x] py-2 px-4 flex gap-3 items-center border border-black hover:text-white bg-red-500 hover:bg-primary hover:border-primary">
+                      <span className="uppercase">Hủy</span>
                     </button>
                   </div>
                 </form>
