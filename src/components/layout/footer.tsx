@@ -2,19 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Logo from "../ui/Logo";
 
 function Footer() {
   return (
     <footer>
       <div className="container mx-auto px-5 py-10 border-t lg:px-[10%]">
-        <Link href="/" aria-label="">
-          <img
-            src="/images/logo-1.png"
-            width={140}
-            className="object-scale-down mb-5"
-            alt=""
-          />
-        </Link>
+        <Logo />
         <div className="grid md:grid-cols-3 gap-10 items-end text-sm mb-3">
           <p>
             <strong>Liên hệ:</strong> (+84) 090 4526829 <br />

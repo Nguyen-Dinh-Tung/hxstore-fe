@@ -36,10 +36,10 @@ export default function RootLayout({
           type="image/x-icon"
         />
         <link rel="icon" href="/images/Favicon.png" type="image/x-icon" />
-        <meta property="og:site_name" content="HxStore" />
+        <meta property="og:site_name" content="sinhlyshop90" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://hxstore.vercel.app/" />
-        <meta property="og:title" content="LESAC - MINIMAL BAGS BRAND" />
+        <meta property="og:title" content="Shop sinh ly 90" />
         <meta
           property="og:image"
           content="https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/169249/Originals/website-la-gi-01.jpeg"
