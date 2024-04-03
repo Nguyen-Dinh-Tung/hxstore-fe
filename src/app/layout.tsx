@@ -53,10 +53,10 @@ export default function RootLayout({
       <body className={monsFonts.className}>
         <div className="flex justify-between items-center">
           <p className="text-center text-xs pl-5">
-            Enjoy every moment with LESAC
+            Shop sinh - ly Lê Văn Sỹ, phường 11,{" "}
           </p>
           <div className="p-2 bg-black text-white font-bold">
-            <a href="tel:0378362631">+84-378362631</a>
+            <a href="tel:090 4526829">090 4526829</a>
           </div>
         </div>
         <Header />

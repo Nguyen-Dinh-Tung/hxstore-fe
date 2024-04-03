@@ -24,9 +24,8 @@ const HomeBanner = () => {
             Sinh ly shop - 90
           </h1>
           <p className="text-xs lg:text-base">
-            LESAC mang đến concept &quot;The Feels&quot; - được lấy cảm hứng
-            trực tiếp từ cảm nhận chân thật khi chạm vào những chiếc túi đến từ
-            BST Thu Đông 2023.
+            Sinhlyshop90 mang đến sự khác biệt trong tình yêu , tình dục . Hãy
+            thử và cảm nhận .
           </p>
         </div>
         <Button label="Xem thêm" />
