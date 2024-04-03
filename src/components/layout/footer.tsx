@@ -20,7 +20,7 @@ function Footer() {
             <strong>Liên hệ:</strong> (+84) 090 4526829 <br />
             <strong>Email:</strong> sinhlyshop90@gmail.com <br />
             <strong>Hà Nội</strong>: Phường Trung Tự, quận Đống Đa, Hà Nội -
-            115A Cầu Giấy, phường Quan Hoa, quận Cầu Giấy, Hà Nội
+            Phường Quan Hoa, quận Cầu Giấy, Hà Nội
           </p>
           <p>
             Sinh ly x Shop 90 <br />
