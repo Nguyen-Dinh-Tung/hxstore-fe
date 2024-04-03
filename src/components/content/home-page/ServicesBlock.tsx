@@ -6,8 +6,8 @@ function ServicesBlock() {
       <div className="p-[10%] bg-tertiary">
         <h2 className="font-semibold">HỖ TRỢ PHÍ SHIP</h2>
         <p className="text-sm">
-          Mua 02 sản phẩm bất kì giảm 30.000đ/ đơn Mua 01 sản phẩm túi + 01 sản
-          phẩm ví giảm 20.000đ/ đơn Mua 02 sản phẩm ví giảm 10.000đ/ đơn
+          Mua 02 sản phẩm bất kì giảm 30.000đ/ đơn Mua 01 sản phẩm + 01 sản phẩm
+          đặc trưng giảm 20.000đ/ đơn Mua 02 sản phẩm ví giảm 10.000đ/ đơn
         </p>
       </div>
       <div className="p-[10%] bg-tertiary">
