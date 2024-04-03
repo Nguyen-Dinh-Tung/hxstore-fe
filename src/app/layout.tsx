@@ -38,7 +38,7 @@ export default function RootLayout({
         <link rel="icon" href="/images/Favicon.png" type="image/x-icon" />
         <meta property="og:site_name" content="sinhlyshop90" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://hxstore.vercel.app/" />
+        <meta property="og:url" content="https://sinhlyshop90.com/" />
         <meta property="og:title" content="Shop sinh ly 90" />
         <meta
           property="og:image"
