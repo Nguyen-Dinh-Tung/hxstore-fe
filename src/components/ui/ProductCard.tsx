@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Button from "./Button";
 import Modal, { ProductInfo } from "./Modal";
 import { baseApi } from "@/config/axios";
 
